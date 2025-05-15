@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="contagem"/>
+        <attribute name="authors" value="yaggo.rasilva"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-13 03:13:38 "/>
+        <attribute name="created" value="eWFnZ28ucmFzaWx2YTtTQU4wNjc0NDAwVzExLTE7MjAyNS0wNS0xMzsiMDI6MTI6MjQgIjszMzgx"/>
+        <attribute name="edited" value="eWFnZ28ucmFzaWx2YTtTQU4wNjc0NDAwVzExLTE7MjAyNS0wNS0xMzsiMDM6MTM6MzggIjsxOzM0OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2, contador" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite o primeiro n&#250;mero&quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="numero2"/>
+            <if expression="numero1 = numero2">
+                <then>
+                    <output expression="&quot;Imposs&#237;vel incrementar ou decrementar!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numero1&lt;numero2">
+                        <then>
+                            <output expression="&quot;inicio&quot;" newline="True"/>
+                            <for variable="contador" start="numero1" end="numero2 " direction="inc" step="1">
+                                <output expression="contador" newline="True"/>
+                            </for>
+                            <output expression="&quot;fim&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="numero1 &gt; numero2">
+                                <then>
+                                    <output expression="&quot;inicio&quot;" newline="True"/>
+                                    <for variable="contador" start="numero1 " end="numero2  " direction="dec" step="1">
+                                        <output expression="contador" newline="True"/>
+                                    </for>
+                                    <output expression="&quot;fim&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

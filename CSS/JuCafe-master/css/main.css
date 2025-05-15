@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* HEADER */
+
+header {
+  background-color: #982417;
+  width: 100vw;
+  height: 176px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.header__title {
+  font-weight: bold;
+  color: #FFF0D1;
+  font-family: "Just Me Again Down Here", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  line-height: 100%;
+  display: flex;
+  padding: 1%;
+
+}
+
+.header__title__dourado {
+  font-weight: bold;
+  color: #C7AB72;
+  font-family: "Just Me Again Down Here", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  line-height: 100%;
+  display: flex;
+}
+
+.Menu ul a {
+  font-family: "Just Me Again Down Here", cursive;
+  color: #FFF0D1;
+  font-size: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-decoration: none;
+}
+
+/* MAIN */
+
+/* Imagem do café */
+
+.cafeimage {
+  width: 100vw;
+  height: 528px;
+  background-size: cover;
+  background-image: url("../img/novoBanner.png");
+  background-position: center;
+}
+
+.Negrito {
+  font-weight: bold;
+  font-size: 40px;
+  height: auto;
+}
+
+.text__red {
+  color: #c90f0f;
+}
+
+.form {
+  position: absolute;
+  right: 2%;
+  top: 35%;
+  background-color: lab(100% 0.01 -0.01 / 0.808);
+  padding: 25px 50px;
+  max-width: 500px;
+  text-align: left;
+  height: 237px;
+  width: 500px;
+
+}
+
+.text__form {
+  font-size: 28px;
+  padding: 5%;
+}
+
+.form__btn1 {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 2000);
+  border: 1px solid #FF9C2D;
+  font-size: 18px;
+  width: 162px;
+  height: 35px;
+  justify-content: space-around;
+
+}
+
+.form__btn2 {
+  background-color: #FF9C2D;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 2000);
+  font-size: 18px;
+  width: 162px;
+  height: 35px;
+
+}
+
+/* Benefícios e vantagens */
+
+.Beneficios {
+  background-color: #FFF0D1;
+  text-align: center;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.Beneficios__title {
+  margin-bottom: 30px;
+  color: #8B2C1B;
+  font-weight: bold;
+  border-left: 6px solid #8B2C1B;
+  padding-left: 10px;
+  padding-right: 1010px;
+  display: inline-block;
+  width: auto;
+  font-size: 24px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.valores {
+  background-color: #FFFFFF;
+  width: 250px;
+  flex-direction: row;
+}
+
+
+.money {
+  background-color: #FFFFFF;
+  width: 250px;
+  flex-direction: row;
+}
+
+
+.pessoas {
+  background-color: #FFFFFF;
+  width: 250px;
+  flex-direction: row;
+}
+
+/* Depoimentos */
+.depoimentos {
+  background-color: #111;
+  color: #fff;
+  width: 100%;
+  min-height: 595px;
+  gap: 16px;
+  padding: 32px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.depoimentos__title {
+  font-weight: bold;
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.traco {
+  width: 6px;
+  height: 24px;
+  background-color: #fff;
+  margin-right: 12px;
+  border-radius: 2px;
+}
+
+.depoimentos__conteudo {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.depoimentos__texto {
+  max-width: 60%;
+  padding: 0 31.5px;
+  box-sizing: border-box;
+  flex-direction: column;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+.depoimentos__autor {
+  font-weight: bold;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 6px;
+}
+
+.depoimentos__endereco {
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.depoimentos__imagem {
+  width: 404px;
+  height: -400px;
+  padding: 32px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: #111;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modelo de Negócio */
+
+ .modelo__de__negocio {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: left; 
+}
+
+.negocio__title {
+  font-family: 'Lekton', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #8B2C1B;
+  border-left: 6px solid #8B2C1B;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.modelos {
+  width: 80%;
+  max-width: 1376px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  flex-wrap: wrap;
+
+}
+
+.bistro {
+  width: 480px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+
+.quiosque {
+  width: 480px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+
+.bistro__imagem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.quiosque__imagem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.faixa {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #8B2C1B;
+  color: #fff;
+  padding: 12px 50px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.lista {
+  list-style: disc;
+  margin-top: 16px;
+  padding-left: 20px;
+  text-align: left;
+  width: 100%;
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #982417;
+  color: #fff;
+  padding: 20px;
+  font-family: 'Lekton', sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__icons a {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.footer__contato {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #f5f5f5;
+}
