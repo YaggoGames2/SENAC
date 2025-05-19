@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Média Alunos</title>
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scriptdom.js"></script>
 </head>
+
 <body>
-    <h1>Médias Bimestrais</h1>
+    <h1 id="titulo">Médias Bimestrais</h1>
+
+    <form action="" id="form">
+        <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno..." class="form__element form__textbox">
+
+        <div class="form__element" >
+            <label for="nota1">Primeira nota</label>
+            <input type="number" id="nota1" min="0" max="10"  class="form__textbox">
+        </div>
+
+        <div class="form__element"><label for="nota2">Segunda nota</label>
+            <input type="number" id="nota2" min="0" max="10"  class="form__textbox">
+        </div>
+
+        <div class="form__element"> <label for="nota3" >Terceira nota</label>
+            <input type="number" id="nota3" min="0" max="10"  class="form__textbox">
+        </div>
+
+        <div class="form__element"> <label for="nota4" >Quarta nota</label>
+            <input type="number" id="nota4" min="0" max="10"  class="form__textbox">
+        </div>
+
+        <input type="button" value="Calcular Média" class="form__element form__button" onclick="CalcularMedia();">
+        
+        <div class="result-box">
+            <p class="result-box__text">Resultado do aluno</p>
+            <input type="text" class="form__textbox" id="MediaAluno">
+            <input type="text" class="form__textbox" id="situacaoAluno">
+        </div>
+    </form>
+
 </body>
+
+
 </html>
