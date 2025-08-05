@@ -1,0 +1,126 @@
+body {
+  font-family: monospace;
+  background: linear-gradient(to right, #000000, rgb(29, 155, 35));
+  background-repeat: no-repeat;
+  background-position: top center; /* Coloca a imagem no topo */
+  background-size: cover; /* A imagem de fundo vai cobrir toda a tela */
+  padding-top: 50px; /* Evita que o conteúdo sobreponha a imagem */
+  color: white;
+  text-align: center;
+}
+ 
+/* Estilo para o título */
+h1 {
+  font-family: serif;
+  text-align: center;
+  color: #ffffff;
+}
+ 
+/* Estilo para as tabelas */
+table {
+  color: hsla(0, 0%, 100%, 0.973);
+  background-color: rgba(234, 243, 240, 0.726);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 15px auto;
+}
+ 
+/* Estilo para as células da tabela */
+td, th {
+  border: 1px solid hsl(0, 0%, 0%);
+  color: #ebf5ef; /* Cor das letras nas células */
+}
+ 
+/* Estilo da imagem (bandeira ou logotipo) */
+img {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 500;
+  margin-right: 500;
+  display: block;
+}
+ 
+/* Estilo da classe do banner original (quando fixa no topo) */
+.banneroriginal {
+  position: fixed;
+  top: 0; /* Coloca a imagem no topo da página */
+  width: 100%; /* Ajusta a largura do banner */
+  height: auto;
+  z-index: -1; /* Coloca o banner atrás do conteúdo */
+  background-size: cover;
+  background-position: center;
+}
+ 
+/* Estilo do menu */
+nav ul {
+  margin: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+ 
+.menu {
+  background-color: #8F8F8F;
+  width: 100%;
+  height: 320px; /* Ajuste o tamanho conforme necessário */
+  background-image: url('./Imagens/banneroriginal.jfif');
+  background-repeat:repeat-y;
+  background-size: cover;
+  background-position: center;
+}
+ 
+#introducao
+{
+  width: 40%; /* Largura do retângulo */
+  height: 40%; /* Altura do retângulo */
+  background-color: #5e5a5a; /* Cor de fundo do retângulo */
+  border-radius: 10px; /* Bordas arredondadas (opcional) */
+  margin-left: 200;
+  margin-right: 200;
+  margin-top: 300;
+  background-position: relative;
+  background-size: cover;
+  text-align: justify;
+  display: inline-block;
+ 
+
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+ 
+.menu ul li {
+  margin: 0 15px;
+}
+ 
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+}
+ 
+.menu ul li a:hover {
+  background-color: hsl(125, 96%, 44%);
+  border-radius: 5px;
+}
+
+.video
+{
+  display: flex;
+  Flex-direction: column; 
+  align-items: right;  
+  gap: 15px;
+  margin-left: 1390px;
+  padding: 10px;
+}
+
+/*  colum server para alinhar na vertical  */

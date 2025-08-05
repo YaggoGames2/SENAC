@@ -1,0 +1,43 @@
+   body
+    {
+      font-family: monospace;
+      background: linear-gradient(to right, hsla(0, 0%, 0%, 0), hsl(120, 96%, 29%) );
+    }
+    h1 aa
+    {
+      font-family: serif;
+    }
+    table
+    {
+      color: hsla(0, 0%, 100%, 0.973);
+      background-color: rgba(234, 243, 240, 0.726);
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid hwb(118 4% 14%);
+      border-radius: 10px;
+      margin: 15px auto;
+    }
+    td, th
+    {
+        border: 1px solid hsl(0, 0%, 0%);
+    }
+    /* Formatação dos títulos do meu site */
+    h1
+    {
+      text-align: center;
+      color:#ffffff
+      front-family: serif;
+    }
+    td  
+    {
+       color: #ebf5ef
+    }
+    img
+    {
+      margin: 250;
+      width: 200px;
+      height: 200px;
+      
+    }
+  

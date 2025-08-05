@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Atividade2 fluxograma"/>
+        <attribute name="authors" value="yaggo.rasilva"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-08 03:22:22 "/>
+        <attribute name="created" value="eWFnZ28ucmFzaWx2YTtTQU4wNzE3NDY0VzExLTE7MjAyNS0wNS0wODsiMDI6MzA6MTYgIjszMzk0"/>
+        <attribute name="edited" value="eWFnZ28ucmFzaWx2YTtTQU4wNzE3NDY0VzExLTE7MjAyNS0wNS0wODsiMDM6MjI6MjIgIjsxOzM1MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2, resultado" type="Integer" array="False" size=""/>
+            <declare name="impar, par" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero&quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero maior do que o primeiro&quot;" newline="True"/>
+            <input variable="numero2"/>
+            <assign variable="resultado" expression="numero1"/>
+            <while expression="resultado &lt;numero2">
+                <if expression="resultado % 2 == 0">
+                    <then>
+                        <output expression="resultado &amp;  &quot; esse n&#250;mero ser&#225; par&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="resultado &amp;   &quot; esse n&#250;mero ser&#225; impar&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="resultado" expression="resultado + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

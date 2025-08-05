@@ -1,0 +1,130 @@
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    width: 70%;
+    border: 1px solid lightgray;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+#animacao1 {
+    width: 200px;
+    height: 200px;
+    background-color: #0be960;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0, 1.65, .21, -0.86);
+    /* transition-delay: 1s; */
+}
+
+#animacao1:hover {
+    width: 100%;
+    color: black;
+    font-size: 20px;
+}
+
+#animacao2 {
+    width: 200px;
+    height: 200px;
+    background-color: #b3ff00;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+#animacao2.clicou {
+    background-color: rgb(153, 0, 255);
+    width: 575px;
+    height: 100px;
+    border-radius: 15px;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+#toggleAnimacao2:checked+#Animacao2 {
+    width: 200px;
+    height: 200px;
+    background-color: #b3ff00;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+#animacao4 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    animation-name: mudancadecor;
+    animation-duration: 50s;
+
+}
+
+@keyframes mudancadecor {
+    0% {
+        background-color: hsl(310, 100%, 50%);
+        color: yellow;
+    }
+
+    25% {
+        background-color: #ffff02;
+        color: #0000ff;
+    }
+
+    50% {
+        background-color: #0000ff;
+        color: #00ff00;
+    }
+
+    100% {
+        background-color: #00ff00;
+        color: white;
+    }
+}
+
+#animacao5 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    animation-name: mudancadecor;
+    animation-duration: 50s;
+    transform: rotate(180deg);
+    rotate: 20deg;
+    animation: rodar 1s linear infinite;
+}
+
+@keyframes rodar {
+   from{
+    transform: rotate(0deg);
+   } 
+   to{
+    transform: rotate(360deg);
+   }
+}

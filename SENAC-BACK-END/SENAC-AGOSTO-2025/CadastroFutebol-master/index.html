@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Style.css">
+    <title> Formulário de Futebol </title>
+</head>
+
+<body>
+    <h1 id="title"> Formulário do seu time </h1>
+
+    <div class="conteiner">
+        <form action="formulario.php" method="get">
+
+            <div> 
+                <label for="texto__formulario"> Digite o seu Nome:</label> <br>
+                <div class="Nome">
+                    <input type="text" id="Nome__Usuario">
+                </div>
+            </div>
+
+
+            <div>
+                <label for="texto__formulario"> Digite a sua idade: </label>
+                <div class="idade">
+                    <input type="number" id="Idade__Usuario">
+                </div>
+            </div>
+
+            <div>
+                <label for="Celular"> Digite o Número do celular com DDD: </label> <br>
+                <input type="text" minlength="11" maxlength="11" name="celular" id="celular">
+            </div>
+
+            <div><label for="times"> Escolha o seu time: </label> <br>
+                <select for="Time" name="time">
+                    <option value="selecione"> Selecione </option>
+                    <option value="time1"> São Paulo </option>
+                    <option value="time2"> Santos </option>
+                    <option value="time3"> Palmeiras </option>
+                    <option value="time4"> Corinthias </option>
+                    <option value="time5"> Cruzeiro </option>
+                    <option value="Outros"> Outros... </option>
+                </select>
+            </div>
+
+            <div>
+                <input type="checkbox" id="socio__torcedor" name="sms" value="sim">
+                <label for="texto__formulario"> Receber sms de notícias sobre o seu time: </label><br>
+            </div>
+
+            <div>
+                <label for="frequencia"> Frequenta o estádio: </label><br>
+                <input type="radio" class="estadio1x" name="estadio" value="1x">
+                <label for="estadio1"> 1 vez por mês </label><br>
+                <input type="radio" class="estadio3x" name="estadio" value="1x">
+                <label for="estadio2"> 3 vezes por mês </label><br>
+                <input type="radio" class="estadio+3x" name="estadio" value="1x">
+                <label for="estadio3"> mais de 3 vezes por mês </label><br>
+            </div>
+
+
+            <div id="botao">
+                <input type="button" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

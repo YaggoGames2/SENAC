@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scriptDOM.js"></script>
+    <title>Conversão</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <form class="form">
+            <p class="form__text"> Qual sua conversão hoje?</p>
+            <div class="form__value">
+                <input type="number" id="bloco_one">
+            </div>
+            <div class="form__money">
+                <select class="select" id="form__money-option">
+                    <option value="">Selecione Moeda</option>
+                    <option value="dolar">Dolar $</option>
+                    <option value="euro">Euro €</option>
+                </select>
+            </div>
+            <input type="button" value="Calcular" class="form__button" onclick="Converter()">
+            <P id="form__resultado"> Resultado da conversão aqui</P>
+        </form>
+    </div>
+</body>
+
+</html>
